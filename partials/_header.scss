@@ -1,0 +1,49 @@
+header{
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i{
+    color:$black-dark;
+}
+
+.header-icone{
+    display: flex;
+    gap: 14px;
+}
+
+.header-icons a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: $red-light;
+    }
+}
+@keyframes translateY{
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.header-button{
+    border:1px solid $black-light;
+    padding: 8px 24px;
+    border-radius: 4px;
+    color:$black-light;
+    background-color: transparent;
+    transition: background-color 0.8s;git
+    
+}
+.header-button:hover{
+    border: 1px solid $red-light;
+    background-color: $red-light;
+
+
+}
